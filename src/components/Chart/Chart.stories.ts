@@ -8,10 +8,11 @@ const meta = {
   parameters: {
     layout: "centered",
   },
+  argTypes: {},
 } satisfies Meta<typeof ChartComponent>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Chart: Story = {};
+export const Chart: Story = { args: { maxHeight: "100%", maxWidth: "100%" } };
