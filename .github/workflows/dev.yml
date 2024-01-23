@@ -65,6 +65,7 @@ jobs:
         with:
           publish-dir: "./dist"
           production-branch: master
+          alias: ""
           # github-token: ${{ secrets.GITHUB_TOKEN }}
           # deploy-message: "Deploy from GitHub Actions"
           # enable-pull-request-comment: false
