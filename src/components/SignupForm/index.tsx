@@ -117,7 +117,7 @@ const SignupForm = () => {
             helperText={errors?.confirmPassword?.message ?? " "}
           />
           <Button variant="contained" type="submit">
-            Login
+            Sign up
           </Button>
         </Stack>
       </form>

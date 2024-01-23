@@ -1,12 +1,9 @@
-import LoginForm from "@/components/LoginForm";
-import SignupForm from "./components/SignupForm";
-// import "./App.css";
+import Chart from "@/components/Chart";
 
 function App() {
   return (
     <>
-      {/* <LoginForm /> */}
-      <SignupForm />
+      <Chart maxHeight="30%" maxWidth="30%" />
     </>
   );
 }

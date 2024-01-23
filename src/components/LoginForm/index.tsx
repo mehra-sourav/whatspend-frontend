@@ -25,7 +25,7 @@ const LoginForm = () => {
       <h1>Login Form</h1>
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Stack width={300} spacing={2}>
+        <Stack width={300} spacing={0.5}>
           <TextField
             label="Phone Number"
             type="number"
@@ -40,7 +40,7 @@ const LoginForm = () => {
               },
             })}
             error={!!errors.phoneNumber}
-            helperText={errors?.phoneNumber?.message}
+            helperText={errors?.phoneNumber?.message ?? " "}
           />
           <TextField
             label="Password"
@@ -55,7 +55,7 @@ const LoginForm = () => {
               },
             })}
             error={!!errors.password}
-            helperText={errors?.password?.message}
+            helperText={errors?.password?.message ?? " "}
           />
           <Button variant="contained" type="submit">
             Login
