@@ -61,7 +61,7 @@ jobs:
         run: npm run build --if-present
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2.0
+        uses: nwtgck/actions-netlify@v2.1.0
         with:
           publish-dir: "./dist"
           production-branch: master
