@@ -64,7 +64,7 @@ jobs:
         uses: nwtgck/actions-netlify@v2.1.0
         with:
           publish-dir: "./dist"
-          production-branch: dev
+          production-branch: main
           alias: "dev"
 
         env:
