@@ -64,14 +64,9 @@ jobs:
         uses: nwtgck/actions-netlify@v2.1.0
         with:
           publish-dir: "./dist"
-          production-branch: master
-          alias: "prod"
-          # github-token: ${{ secrets.GITHUB_TOKEN }}
-          # deploy-message: "Deploy from GitHub Actions"
-          # enable-pull-request-comment: false
-          # enable-commit-comment: true
-          # overwrites-pull-request-comment: true
+          production-branch: main
+
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_DEV_SITE_ID }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_PROD_SITE_ID }}
         timeout-minutes: 1
