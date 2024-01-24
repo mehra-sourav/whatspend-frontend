@@ -65,7 +65,7 @@ jobs:
         with:
           publish-dir: "./dist"
           production-branch: dev
-          alias:"dev"
+          alias: "dev"
 
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
