@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       {/* <Chart maxHeight="30%" maxWidth="30%" /> */}
-      DEV
+      DEV test
       <LoginForm />
     </>
   );
