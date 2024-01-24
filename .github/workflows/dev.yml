@@ -1,4 +1,4 @@
-name: CI/CD
+name: Development CI/CD
 
 on:
   push:
@@ -65,8 +65,6 @@ jobs:
         with:
           publish-dir: "./dist"
           production-branch: dev
-          # alias: "dev"
-          # github-token: ${{ secrets.GITHUB_TOKEN }}
 
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
